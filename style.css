@@ -126,7 +126,7 @@ a:hover {
     height: clamp(280px, 46vh, 450px);
     background:
         linear-gradient(to bottom, rgba(37, 36, 32, 0.12), rgba(37, 36, 32, 0.45)),
-        url('IMG_0163.jpeg') center / cover no-repeat;
+        url('IMG_0163.jpeg') center / cover no-repeat; fixed no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -166,9 +166,11 @@ a:hover {
 
 /* Olive-sage lower band with centered underlined link */
 .hero-lower {
+   position: relative;
+   z index; 2
     background-color: var(--bg-olive);
     padding: clamp(3.2rem, 6vw, 4.8rem) 6%;
-    display: flex;
+    display: flex; 
     justify-content: center;
     align-items: center;
     text-align: center;

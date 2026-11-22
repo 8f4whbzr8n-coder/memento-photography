@@ -356,3 +356,89 @@ footer p a {
         grid-template-columns: 1fr;
     }
 }
+/* ==========================================================================
+   SUB-PAGES (PORTRAITS, STILL LIFE, CAMPAIGNS)
+   ========================================================================== */
+
+.subpage-header {
+    background-color: var(--bg-linen);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: clamp(4rem, 7vw, 6rem) 6%;
+    border-bottom: 1px solid var(--border-hairline);
+}
+
+.subpage-header h1 {
+    font-family: var(--font-condensed);
+    font-stretch: condensed;
+    font-weight: 400;
+    font-size: clamp(3rem, 7vw, 5.2rem);
+    line-height: 0.95;
+    color: var(--ink-dark);
+    margin-bottom: 1rem;
+}
+
+.subpage-header p:not(.eyebrow) {
+    font-size: 1.2rem;
+    color: var(--ink-muted);
+    max-width: 46ch;
+    margin-bottom: 1.6rem;
+}
+
+.back-link {
+    font-size: 0.92rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--ink-dark);
+}
+
+.subpage-gallery-section {
+    background-color: var(--bg-olive);
+    padding: clamp(4rem, 7vw, 6rem) 6%;
+    border-bottom: 1px solid var(--border-hairline);
+}
+
+.subpage-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.75rem;
+    max-width: 1220px;
+    margin-inline: auto;
+}
+
+.subpage-photo {
+    aspect-ratio: 4 / 5;
+    background-color: var(--placeholder-dark);
+    border: 1px solid var(--border-hairline);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.subpage-photo span {
+    font-size: 0.78rem;
+    letter-spacing: 0.22em;
+    color: rgba(251, 249, 244, 0.55);
+}
+
+.subpage-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+@media (max-width: 900px) {
+    .subpage-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .subpage-gallery {
+        grid-template-columns: 1fr;
+    }
+}

@@ -111,7 +111,7 @@ a:hover {
 }
 
 /* ==========================================================================
-   HERO SECTION (.hero) — Full-Bleed Photo Placeholder + Olive Lower Band
+   HERO SECTION (.hero) — Full-Bleed Photo + Olive Lower Band
    ========================================================================== */
 
 .hero {
@@ -119,8 +119,7 @@ a:hover {
     border-bottom: 1px solid var(--border-hairline);
 }
 
-/* Wide horizontal photo placeholder matching the mockup proportions */
-/* Wide horizontal photo placeholder matching the mockup proportions */
+/* Wide horizontal hero photo */
 .hero-photo-placeholder {
     position: relative;
     width: 100%;
@@ -135,17 +134,6 @@ a:hover {
     text-align: center;
     padding: 0 5% 1.1rem;
     overflow: hidden;
-}
-
-/* Subtle placeholder label in top-right corner (remove once you add your photo) */
-.hero-photo-placeholder::after {
-    content: 'HERO PHOTO PLACEHOLDER';
-    position: absolute;
-    top: 14px;
-    right: 18px;
-    font-size: 0.72rem;
-    letter-spacing: 0.2em;
-    color: rgba(251, 249, 244, 0.45);
 }
 
 .hero-title-group {

@@ -7,6 +7,7 @@
     --bar-charcoal: #474745;        /* Top navigation bar */
     --bg-olive: #b3b98c;            /* Signature olive-sage field */
     --text-olive: #959e6d;          /* Olive-sage display title & nav links */
+    --placeholder-dark: #54594c;    /* Soft film-toned placeholder backdrop */
     --bg-linen: #f5f2eb;            /* Warm cream/linen contrast sections */
     --bg-cream: #fbf9f4;            /* Card frame surface */
     --bg-blush: #eadcd6;            /* Soft dusty blush accent */
@@ -125,7 +126,7 @@ a:hover {
     height: clamp(280px, 46vh, 450px);
     background:
         linear-gradient(to bottom, rgba(37, 36, 32, 0.12), rgba(37, 36, 32, 0.45)),
-        url('IMG_0163.jpg') center
+        url('IMG_0163.jpg') center / cover no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;

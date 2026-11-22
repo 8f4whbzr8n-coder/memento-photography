@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,9 +10,7 @@
 <body>
 
     <header class="navbar">
-        <a href="#" class="logo">MEMENTO</a>
-
-        <nav>
+        <nav aria-label="Primary Navigation">
             <a href="#about">ABOUT</a>
             <a href="#portfolio">PORTFOLIO</a>
             <a href="#contact">CONTACT</a>
@@ -23,57 +20,39 @@
     <main>
 
         <section class="hero">
-            <p class="eyebrow">PHOTOGRAPHY · VISUAL STORYTELLING</p>
+            <div class="hero-photo-placeholder" role="img" aria-label="Featured photography placeholder">
+                <div class="hero-title-group">
+                    <h1>Memento</h1>
+                    <p class="hero-subtitle">MOMENTS, REMEMBERED.</p>
+                </div>
+            </div>
 
-            <h1>
-                Moments,<br>
-                <em>remembered.</em>
-            </h1>
-
-            <a href="#portfolio" class="discover">
-                DISCOVER THE PORTFOLIO
-            </a>
-        </section>
-
-        <section class="introduction">
-            <p class="eyebrow">WELCOME TO MEMENTO</p>
-
-            <h2>A world through my lens.</h2>
-
-            <p>
-                Romantic imagery, nostalgic details and stories told
-                through photography. Exploring fashion, people and
-                the beauty of everyday objects.
-            </p>
+            <div class="hero-lower">
+                <a href="#portfolio" class="discover">DISCOVER THE PORTFOLIO</a>
+            </div>
         </section>
 
         <section class="portfolio" id="portfolio">
-            <p class="eyebrow">A COLLECTION OF STORIES</p>
-
             <h2>Selected work</h2>
 
             <div class="gallery">
+                <a href="#portfolio" class="photo-placeholder">
+                    <h3>FASHION &amp; EDITORIAL</h3>
+                </a>
 
-                <div class="photo-placeholder">
-                    <h3>FASHION & EDITORIAL</h3>
-                </div>
+                <a href="#portfolio" class="photo-placeholder">
+                    <h3>OBJECTS &amp; DETAILS</h3>
+                </a>
 
-                <div class="photo-placeholder">
-                    <h3>OBJECTS & DETAILS</h3>
-                </div>
-
-                <div class="photo-placeholder">
+                <a href="#portfolio" class="photo-placeholder">
                     <h3>VISUAL STORIES</h3>
-                </div>
-
+                </a>
             </div>
         </section>
 
         <section class="about" id="about">
             <p class="eyebrow">THE PHOTOGRAPHER</p>
-
             <h2>Behind the lens.</h2>
-
             <p>
                 A love for nostalgic imagery, natural light, fashion
                 and the little details that make a photograph
@@ -83,16 +62,16 @@
 
         <section class="contact" id="contact">
             <h2>Let's create something.</h2>
-
             <p>
-                For creative collaborations and photography enquiries.
+                For creative collaborations and photography enquiries,
+                <a href="mailto:hello@memento.com">get in touch</a>.
             </p>
         </section>
 
     </main>
 
     <footer>
-        <p>MEMENTO · PHOTOGRAPHY</p>
+        <p><a href="#">MEMENTO · PHOTOGRAPHY</a></p>
     </footer>
 
 </body>
